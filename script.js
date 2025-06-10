@@ -49,6 +49,6 @@ botaoPlay.addEventListener('click', () => {
 
 //musica.play();
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     botaoPlay.click();
- }, false);
+ }, false);*/
