@@ -1,9 +1,14 @@
 body {
     background-color: #282828;
+    font-family: monospace;
 }
 
 h1 {
     color: white;
+}
+
+h1 span {
+    color: #f17878;
 }
 
 .nomes {
@@ -12,13 +17,25 @@ h1 {
 }
 
 .mensagem {
-    font-size: medium;
+    font-size: 25px;
     text-align: center;
+    font-weight: bold;    
+}
+
+#contador {
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #e59518;
+    font-weight: bold;
 }
 
 .mensagemTeAmo {
-    font-size: medium;
-    text-align: center;
+    padding: 15px 25px;
+    font-size: medium !important;
+    text-align: justify;
+    color: #ddd;
 }
 
 .passadorDeImagens {
@@ -30,6 +47,7 @@ h1 {
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 .passadorDeImagens img {
@@ -84,7 +102,7 @@ h1 {
 
     .mensagem,
     .mensagemTeAmo {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .spotify {
@@ -97,3 +115,22 @@ h1 {
         background-size: 60%;
     }
 }
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+.heart {
+  position: fixed;
+  font-size: 1.5rem;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  from {
+     transform: translateY(0vh) translateX(-50vw); 
+  }
+  to {
+     transform: translateY(105vh) translateX(50vw); 
+  }
+} 
